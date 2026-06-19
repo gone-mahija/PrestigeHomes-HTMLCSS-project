@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .agents-list {
+        grid-template-columns: 1fr;
+        margin: 40px 20px;
+    }
+    .about-achievements {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    .about-achievements h2 {
+        font-size: 32px;
+    }
+    .our-story {
+        display: block;
+    }
+    .story-content {
+        margin-bottom: 30px;
+    }
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    .agent-card {
+        flex-basis: 100%;
+    }
+     .contact-page {
+        padding: 40px 20px;
+        gap: 40px;
+    }
+
+    .get-in-touch h1 {
+        font-size: 42px;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+    .form-row{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,1424 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prestige Homes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediatab.css" />
+    <link rel="stylesheet" href="mediamobile.css" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header>
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assests/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="pages">
+          <a href="./properties.html" class="header-a">Properties</a>
+          <a href="./agents.html" class="header-a">Agents</a>
+          <a href="./about.html" class="header-a">About</a>
+          <a href="./contact.html" class="header-a">Contact</a>
+        </div>
+
+        <div class="theme">
+          <button><i class="fa-regular fa-moon"></i></button>
+          <a href="./contact.html">List Your Property</a>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- hero section -->
+        <section class="hero">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>Find Your <span>Dream Home</span></h1>
+              <p>
+                Discover luxury properties in the most prestigious neighborhoods
+                with our expert guidance.
+              </p>
+            </div>
+            <div class="property-search">
+              <div class="property-tabs">
+                <a href="properties.html" class="active">Buy</a>
+                <a href="properties.html">Rent</a>
+                <a href="properties.html">Sell</a>
+              </div>
+              <form action="submit" class="search-form">
+                <div class="form-group">
+                  <label for="location">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Location
+                  </label>
+                  <select name="Location" id="location">
+                    <option value="" selected>Any Location</option>
+                    <option value="">Manhattan</option>
+                    <option value="">Brooklyn</option>
+                    <option value="">Queens</option>
+                    <option value="">The Hamptons</option>
+                    <option value="">Westchester</option>
+                    <option value="">Greenwich</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="property-type">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M3 9.5L12 2l9 7.5"></path>
+                      <path d="M5 10v11h14V10"></path>
+                      <path d="M10 21v-6h4v6"></path>
+                    </svg>
+                    Property Type
+                  </label>
+                  <select name="Property Type" id="home-symbol">
+                    <option value="" selected>Any Type</option>
+                    <option value="">House</option>
+                    <option value="">Apartment</option>
+                    <option value="">Condo</option>
+                    <option value="">Townhouse</option>
+                    <option value="">Land</option>
+                    <option value="">Commercial</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="Price Range">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="8"></circle>
+                      <path d="M12 8v8"></path>
+                      <path
+                        d="M15 10.5c0-1.1-1.3-2-3-2s-3 .9-3 2 1.3 2 3 2 3 .9 3 2-1.3 2-3 2-3-.9-3-2"
+                      ></path>
+                    </svg>
+                    Price Range
+                  </label>
+                  <select name="Price Range" id="coin-symbol">
+                    <option value="" selected>Any Price</option>
+                    <option value="">Under $1M</option>
+                    <option value="">$1M - $2.5M</option>
+                    <option value="">$2.5M - $5M</option>
+                    <option value="">$5M - $10M</option>
+                    <option value="">$10M+</option>
+                  </select>
+                </div>
+
+                <div class="search-action">
+                  <a href="./properties.html" class="search-btn">
+                    <svg
+                      class="search-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <circle cx="11" cy="11" r="7"></circle>
+                      <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+                    </svg>
+                    Search
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h2>500+</h2>
+                <p>Properties Listed</p>
+              </div>
+              <div class="stat-item">
+                <h2>$2B+</h2>
+                <p>Sales Volume</p>
+              </div>
+              <div class="stat-item">
+                <h2>15+</h2>
+                <p>Years Experience</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-achievements">
+          <div class="achieve-item">
+            <h2>$2B+</h2>
+            <p>Total Sales Volume</p>
+          </div>
+          <div class="achieve-item">
+            <h2>500+</h2>
+            <p>Properties Sold</p>
+          </div>
+          <div class="achieve-item">
+            <h2>15+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div class="achieve-item">
+            <h2>98%</h2>
+            <p>Client Satisfaction</p>
+          </div>
+        </section>
+
+        <section class="featured-properties">
+          <div class="properties-featured">
+            <div class="properties-title">
+              <h2>Featured Properties</h2>
+              <p>
+                Handpicked luxury properties in the most sought-after locations.
+              </p>
+            </div>
+            <div class="view-properties">
+              <a href="./properties.html">View All Properties</a>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="cards home-cards">
+            <div class="card card-horizontal">
+              <div class="image">
+                <img src="./assests/card-1.jpg" alt="card-1" />
+                <span class="sale">For Sale</span>
+                <span class="new">New</span>
+                <span class="cost">$8.5M</span>
+              </div>
+              <div class="image-name">
+                <h3>Luxury Manhattan Penthouse</h3>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>New York, NY</p>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <p>4 Beds</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M8 12v4M12 12v4M16 12v4"
+                    />
+                  </svg>
+                  <p>4.5 Baths</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 8V4m0 0h4M4 4l5 5" />
+                    <path d="M20 8V4m0 0h-4M20 4l-5 5" />
+                    <path d="M4 16v4m0 0h4M4 20l5-5" />
+                    <path d="M20 16v4m0 0h-4M20 20l-5-5" />
+                  </svg>
+                  <p>4,200 sqft</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./assests/card-2.jpg" alt="card-2" />
+                <span class="sale">For Sale</span>
+                <span class="cost">$3.2M</span>
+              </div>
+              <div class="image-name">
+                <h3>Modern Brooklyn Townhouse</h3>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>Brooklyn, NY</p>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <p>5 Beds</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M8 12v4M12 12v4M16 12v4"
+                    />
+                  </svg>
+                  <p>3.5 Baths</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 8V4m0 0h4M4 4l5 5" />
+                    <path d="M20 8V4m0 0h-4M20 4l-5 5" />
+                    <path d="M4 16v4m0 0h4M4 20l5-5" />
+                    <path d="M20 16v4m0 0h-4M20 20l-5-5" />
+                  </svg>
+                  <p>3,800 sqft</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./assests/card-3.jpg" alt="card-3" />
+                <span class="sale">For Sale</span>
+                <span class="cost">$24.5M</span>
+              </div>
+              <div class="image-name">
+                <h3>Waterfront Hamptons Estate</h3>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>Southampton, NY</p>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <p>8 Beds</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M8 12v4M12 12v4M16 12v4"
+                    />
+                  </svg>
+                  <p>10 Baths</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 8V4m0 0h4M4 4l5 5" />
+                    <path d="M20 8V4m0 0h-4M20 4l-5 5" />
+                    <path d="M4 16v4m0 0h4M4 20l5-5" />
+                    <path d="M20 16v4m0 0h-4M20 20l-5-5" />
+                  </svg>
+                  <p>12,000 sqft</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="./assests/card-4.jpg" alt="card-4" />
+                <span class="sale">For Sale</span>
+                <span class="cost">$4.8M</span>
+              </div>
+              <div class="image-name">
+                <h3>Tribeca Industrial Loft</h3>
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>New York, NY</p>
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <p>3 Beds</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M4 12V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6M8 12v4M12 12v4M16 12v4"
+                    />
+                  </svg>
+                  <p>2.5 Baths</p>
+                </div>
+                <div class="feature">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M4 8V4m0 0h4M4 4l5 5" />
+                    <path d="M20 8V4m0 0h-4M20 4l-5 5" />
+                    <path d="M4 16v4m0 0h4M4 20l5-5" />
+                    <path d="M20 16v4m0 0h-4M20 20l-5-5" />
+                  </svg>
+                  <p>2,800 sqft</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="good-things">
+          <div class="good-things-title">
+            <h2>Why Choose Prestige Homes</h2>
+            <p>
+              We bring decades of experience and a personalized approach to
+              every client.
+            </p>
+          </div>
+          <div class="good-things-points">
+            <div class="good-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+              <h3>Trusted Expertise</h3>
+              <p>
+                15+ years of experience in luxury real estate with a proven
+                track record
+              </p>
+            </div>
+            <div class="good-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+              </svg>
+              <h3>Exclusive Listings</h3>
+              <p>
+                Access to off-market properties and exclusive listings before
+                they go public.
+              </p>
+            </div>
+            <div class="good-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <h3>Personal Service</h3>
+              <p>
+                Dedicated agents who understand your unique needs and
+                preferences.
+              </p>
+            </div>
+            <div class="good-item">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v10"></path>
+                <path
+                  d="M15 9.5c0-1.38-1.34-2.5-3-2.5s-3 1.12-3 2.5 1.34 2.5 3 2.5 3 1.12 3 2.5-1.34 2.5-3 2.5-3-1.12-3-2.5"
+                ></path>
+              </svg>
+              <h3>Best Value</h3>
+              <p>
+                Expert negotiation to ensure you get the best possible deal.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="our-agents">
+          <div class="our-agents-title">
+            <h2>Meet Our Agents</h2>
+            <p>
+              Our experienced team is dedicated to helping you find your perfect
+              property.
+            </p>
+          </div>
+          <div class="agent-cards">
+            <div class="agent-card">
+              <div class="agent-info">
+                <img
+                  src="./assests/agent-1.jpg"
+                  alt="agent-1"
+                  width="128px"
+                  height="128px"
+                />
+                <h3>Sarah Mitchell</h3>
+                <p class="role">Senior Partner</p>
+                <p>$500M+ in sales</p>
+              </div>
+              <div class="agent-owns">
+                <p>Luxury Properties</p>
+                <p>Penthouses</p>
+              </div>
+              <div class="agent-contact">
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2
+             19.79 19.79 0 0 1-8.63-3.07
+             19.5 19.5 0 0 1-6-6
+             19.79 19.79 0 0 1-3.07-8.67
+             A2 2 0 0 1 4.11 2h3
+             a2 2 0 0 1 2 1.72
+             c.12.89.33 1.76.63 2.6
+             a2 2 0 0 1-.45 2.11L8.09 9.91
+             a16 16 0 0 0 6 6
+             l1.48-1.2
+             a2 2 0 0 1 2.11-.45
+             c.84.3 1.71.51 2.6.63
+             A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <p>Call</p>
+                </div>
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M3 7l9 6 9-6"></path>
+                  </svg>
+                  <p>Email</p>
+                </div>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-info">
+                <img
+                  src="./assests/agent-2.jpg"
+                  alt="agent-2"
+                  width="128px"
+                  height="128px"
+                />
+                <h3>Michael Chen</h3>
+                <p class="role">Senior Agent</p>
+                <p>$250M+ in sales</p>
+              </div>
+              <div class="agent-owns">
+                <p>Brooklyn</p>
+                <p>Investment Properties</p>
+              </div>
+              <div class="agent-contact">
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2
+             19.79 19.79 0 0 1-8.63-3.07
+             19.5 19.5 0 0 1-6-6
+             19.79 19.79 0 0 1-3.07-8.67
+             A2 2 0 0 1 4.11 2h3
+             a2 2 0 0 1 2 1.72
+             c.12.89.33 1.76.63 2.6
+             a2 2 0 0 1-.45 2.11L8.09 9.91
+             a16 16 0 0 0 6 6
+             l1.48-1.2
+             a2 2 0 0 1 2.11-.45
+             c.84.3 1.71.51 2.6.63
+             A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <p>Call</p>
+                </div>
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M3 7l9 6 9-6"></path>
+                  </svg>
+                  <p>Email</p>
+                </div>
+              </div>
+            </div>
+            <div class="agent-card">
+              <div class="agent-info">
+                <img
+                  src="./assests/agent-3.jpg"
+                  alt="agent-3"
+                  width="128px"
+                  height="128px"
+                />
+                <h3>Jennifer Ross</h3>
+                <p class="role">Agent</p>
+                <p>$150M+ in sales</p>
+              </div>
+              <div class="agent-owns">
+                <p>Downtown Manhattan</p>
+                <p>Lofts</p>
+              </div>
+              <div class="agent-contact">
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2
+             19.79 19.79 0 0 1-8.63-3.07
+             19.5 19.5 0 0 1-6-6
+             19.79 19.79 0 0 1-3.07-8.67
+             A2 2 0 0 1 4.11 2h3
+             a2 2 0 0 1 2 1.72
+             c.12.89.33 1.76.63 2.6
+             a2 2 0 0 1-.45 2.11L8.09 9.91
+             a16 16 0 0 0 6 6
+             l1.48-1.2
+             a2 2 0 0 1 2.11-.45
+             c.84.3 1.71.51 2.6.63
+             A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <p>Call</p>
+                </div>
+                <div class="agent-contact-details">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="M3 7l9 6 9-6"></path>
+                  </svg>
+                  <p>Email</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="view-properties agents-anchor">
+            <a href="./agents.html">View All Agents</a>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </div>
+        </section>
+
+        <section class="testimonials">
+          <div class="testimonials-title">
+            <h2>What Our Clients Say</h2>
+            <p>
+              Hear from homeowners who found their perfect property with us.
+            </p>
+          </div>
+          <div class="testimonial-cards">
+            <div class="testimonial-card">
+              <div class="testimonial-ratings">
+                <!--display:flex -->
+                <div class="testimonial-rating">
+                  <!-- 5 stars -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="testimonial-symbol">
+                  <!-- 2 symols-->
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7.17 6A5.001 5.001 0 0 0 3 11v7h7v-7H6.09A3.001 3.001 0 0 1 9 8V6H7.17zm10 0A5.001 5.001 0 0 0 13 11v7h7v-7h-3.91A3.001 3.001 0 0 1 19 8V6h-1.83z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  "Sarah made our dream of owning a Manhattan penthouse a
+                  reality. Her expertise and dedication throughout the process
+                  was exceptional. We couldn't have asked for a better
+                  experience."
+                </p>
+                <p class="green">Manhattan Penthouse</p>
+              </div>
+              <div class="testimonial-author">
+                <!--display:flex-->
+                <div class="profile-pic"
+                  ><!--image-->
+                  <img src="./assests/author-1.jpg" alt="author-1" />
+                </div>
+                <div class="profile-name">
+                  <!--profile name-->
+                  <h4>David & Emma Thompson</h4>
+                  <p>Homeowners</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-ratings">
+                <!--display:flex -->
+                <div class="testimonial-rating">
+                  <!-- 5 stars -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="testimonial-symbol">
+                  <!-- 2 symols-->
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7.17 6A5.001 5.001 0 0 0 3 11v7h7v-7H6.09A3.001 3.001 0 0 1 9 8V6H7.17zm10 0A5.001 5.001 0 0 0 13 11v7h7v-7h-3.91A3.001 3.001 0 0 1 19 8V6h-1.83z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  "Michael's market knowledge helped me build a portfolio of
+                  investment properties that exceeded my expectations. His
+                  analytical approach is refreshing in this industry."
+                </p>
+                <p class="green">Multiple Properties</p>
+              </div>
+              <div class="testimonial-author">
+                <!--display:flex-->
+                <div class="profile-pic"
+                  ><!--image-->
+                  <img src="./assests/author-2.jpg" alt="author-2" />
+                </div>
+                <div class="profile-name">
+                  <!--profile name-->
+                  <h4>Robert Chen</h4>
+                  <p>Investor</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-ratings">
+                <!--display:flex -->
+                <div class="testimonial-rating">
+                  <!-- 5 stars -->
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="testimonial-symbol">
+                  <!-- 2 symols-->
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M7.17 6A5.001 5.001 0 0 0 3 11v7h7v-7H6.09A3.001 3.001 0 0 1 9 8V6H7.17zm10 0A5.001 5.001 0 0 0 13 11v7h7v-7h-3.91A3.001 3.001 0 0 1 19 8V6h-1.83z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  "As a first-time buyer, I was nervous about the process.
+                  Jennifer walked me through every step and found me the perfect
+                  Brooklyn apartment within my budget."
+                </p>
+                <p class="green">Brooklyn Condo</p>
+              </div>
+              <div class="testimonial-author">
+                <!--display:flex-->
+                <div class="profile-pic"
+                  ><!--image-->
+                  <img src="./assests/author-1.jpg" alt="author-1" />
+                </div>
+                <div class="profile-name">
+                  <!--profile name-->
+                  <h4>Sofia Martinez</h4>
+                  <p>First-time Buyer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-section">
+          <div class="cta-content">
+            <h2>Ready to Find Your Dream Home?</h2>
+
+            <p>
+              Our team of experts is ready to help you navigate the market and
+              find the perfect property.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="properties.html" class="btn-primary">
+                Browse Properties
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+
+              <a href="contact.html" class="btn-secondary"> Contact Us </a>
+            </div>
+
+            <div class="cta-contact">
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2
+                    19.79 19.79 0 0 1-8.63-3.07
+                    19.5 19.5 0 0 1-6-6
+                    19.79 19.79 0 0 1-3.07-8.67
+                    A2 2 0 0 1 4.11 2h3
+                    a2 2 0 0 1 2 1.72
+                    c.12.81.33 1.6.61 2.35
+                    a2 2 0 0 1-.45 2.11L8.09 9.91
+                    a16 16 0 0 0 6 6l1.73-1.18
+                    a2 2 0 0 1 2.11-.45
+                    c.75.28 1.54.49 2.35.61
+                    A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+
+                <span>(555) 234-5678</span>
+              </div>
+
+              <div class="contact-item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 4h16v16H4z" opacity="0"></path>
+                  <path d="M4 4l8 8 8-8"></path>
+                  <rect x="4" y="4" width="16" height="16"></rect>
+                </svg>
+
+                <span>info@prestigehomes.com</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="footer-1">
+            <div class="left">
+              <div class="logo-div">
+                <img src="./assests/logo.svg" alt="logo" />
+              </div>
+              <div class="tagline">
+                <p>
+                  Find your dream home with our curated selection of luxury
+                  properties and expert guidance.
+                </p>
+              </div>
+              <div class="social-media">
+                <a href="./properties.html" class="media-icon">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073c0 6.019 4.388 11.009 10.125 11.927v-8.437H7.078v-3.49h3.047V9.41c0-3.017 1.792-4.687 4.533-4.687 1.312 0 2.686.235 2.686.235v2.963h-1.514c-1.491 0-1.956.931-1.956 1.887v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.082 24 18.092 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a href="./properties.html" class="media-icon">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="18" cy="6" r="1" />
+                  </svg>
+                </a>
+                <a href="./properties.html" class="media-icon">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm8 0h4.8v2.2h.1c.7-1.3 2.3-2.7 4.8-2.7 5.1 0 6.1 3.4 6.1 7.8V24h-5v-7.5c0-1.8 0-4.1-2.5-4.1s-2.9 2-2.9 4v7.6H8V8z"
+                    />
+                  </svg>
+                </a>
+                <a href="./properties.html" class="media-icon">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.5v-7L15.8 12l-6.2 3.5z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="quick-links">
+              <h4>QUICK LINKS</h4>
+              <a href="./properties.html">Properties</a>
+              <a href="./agents.html">Agents</a>
+              <a href="./about.html">About</a>
+              <a href="./contact.html">Contact</a>
+              <a href="./properties.html">Properties for Sale</a>
+              <a href="./properties.html">Properties for Rent</a>
+            </div>
+
+            <div class="neighborhoods">
+              <h4>NEIGHBORHOODS</h4>
+              <a href="./properties.html">Manhattan</a>
+              <a href="./properties.html">Brooklyn</a>
+              <a href="./properties.html">Queens</a>
+              <a href="./properties.html">The Hamptons</a>
+              <a href="./properties.html">Westchester</a>
+              <a href="./properties.html">Greenwich</a>
+            </div>
+
+            <div class="contact-us">
+              <h4>CONTACT US</h4>
+              <div class="address">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="color: green"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <p>
+                  100 Park Avenue, Suite 500 <br />
+                  New York, NY 10017
+                </p>
+              </div>
+
+              <div class="phone">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="color: green"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2
+             19.79 19.79 0 0 1-8.63-3.07
+             19.5 19.5 0 0 1-6-6
+             19.79 19.79 0 0 1-3.07-8.67
+             A2 2 0 0 1 4.11 2h3
+             a2 2 0 0 1 2 1.72
+             c.12.89.33 1.76.63 2.6
+             a2 2 0 0 1-.45 2.11L8.09 9.91
+             a16 16 0 0 0 6 6
+             l1.48-1.2
+             a2 2 0 0 1 2.11-.45
+             c.84.3 1.71.51 2.6.63
+             A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <p>(555) 234-5678</p>
+              </div>
+              <!-- </div> -->
+
+              <div class="website">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  style="color: green"
+                >
+                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                  <path d="M3 7l9 6 9-6"></path>
+                </svg>
+                <p>info@prestigehomes.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-2">
+            <div class="rights">
+              <p>© 2026 Prestige Homes. All rights reserved.</p>
+            </div>
+            <div class="terms">
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+              <p>Fair Housing</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

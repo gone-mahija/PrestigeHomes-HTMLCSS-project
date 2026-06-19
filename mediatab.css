@@ -1,0 +1,140 @@
+@media (max-width:1024px){
+
+    h2{
+        font-size:32px;
+    }
+    header {
+        justify-content: space-between;
+    }
+
+    .pages{
+        display:none;
+    }
+
+    .theme a {
+        display: none;
+    }
+     .hero-text h1{
+        font-size:48px;
+    }
+     .hero-content{
+        padding:100px 20px;
+    }
+    .hero-stats{
+        gap:40px;
+    }
+    .property-tabs a{
+        padding:10px 18px;
+    }
+    .form-group select{
+        width:100%;
+    }
+    .featured-properties{
+        padding:80px 40px;
+    }
+    .good-things {
+        padding: 100px 40px;
+    }
+    .good-things-title h2 {
+        font-size: 32px;
+    }
+    .good-things-points {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-gap: 80px; */
+    }
+     .our-agents {
+        padding: 80px 30px;
+    }
+    .agent-cards {
+        justify-content: center;
+    }
+    .agent-card {
+        flex: 1 1 100%;
+        max-width: none;
+        width: 100%;
+
+    }
+    
+    .testimonials {
+        margin: 80px 40px;
+    }
+
+    .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-title h2 {
+        font-size: 32px;
+    }
+     .home-cards {
+        grid-template-columns: 1fr;
+    }
+    footer{
+        padding:60px 40px;
+    }
+
+    .footer-1{
+        gap:40px;
+    }
+
+    .left{
+        width:100%;
+    }
+
+    .footer-2{
+        flex-direction:column;
+        gap:20px;
+        align-items:center;
+        text-align:center;
+    }
+
+    .footer-2 .terms{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+
+
+
+
+    .agents-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 40px;
+    }
+
+    .about-achievements h2 {
+        font-size: 32px;
+    }
+    .our-story {
+        display: block;
+    }
+    .story-content {
+        margin-bottom: 40px;
+        
+    }
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .agent-cards {
+        justify-content: flex-start;
+    }
+     .agent-card {
+        flex: 0 0 calc(50% - 15px);
+        max-width: none;
+    }
+
+    .get-in-touch  p{
+        /* width: 100%; */
+        max-width: none;
+    }
+     .contact-page {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 60px 40px;
+    }
+
+    .map-section {
+        grid-column: auto;
+    }
+}
